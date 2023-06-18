@@ -1,0 +1,33 @@
+.project{
+  color: black;
+  flex: 1 0 auto;
+  &__block {
+    li {
+      list-style-type: none; /* Убираем маркеры */
+    }
+    a {
+      font-size: 20px;
+      position: relative;
+      display: block;
+      padding: 30px;
+      margin: 30px;
+      background: #a8d5e5;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: .3s ease-out;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+
+      &:hover {
+        outline: 2px dashed #3d1f15; /* Ширина, вид и цвет рамки */
+        outline-offset: -10px;
+        opacity: 0.6;
+      }
+    }
+  }
+  &__title{
+    font-size:40px;
+    line-height: 45px;
+  }
+
+}

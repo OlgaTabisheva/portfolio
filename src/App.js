@@ -1,56 +1,32 @@
 import './App.css';
-import {Link, Route, Routes} from "react-router-dom";
-import Contacts from "./components/Contacts/Contacts";
-import NotFound from "./components/NotFound/NotFound";
-import Projects from "./components/Projects/Projects";
+import Main from "./components/Main/Main";
+import { push as Menu  } from 'react-burger-menu';
+import red from './images/menu_burger.svg';
 import Info from "./components/Info/Info";
-import {Menu, MenuItem, Sidebar, useProSidebar} from "react-pro-sidebar";
-import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
-import EngineeringIcon from "@mui/icons-material/Engineering";
-import WorkIcon from "@mui/icons-material/Work";
-import ContactsIcon from "@mui/icons-material/Contacts";
 import Skills from "./components/Skills/Skills";
+import Projects from "./components/Projects/Projects";
+import Contacts from "./components/Contacts/Contacts";
+
 
 function App() {
-  const { collapseSidebar } = useProSidebar();
-
+  function showSettings(event){
+    event.preventDefault()
+  }
   return (
     <div className="App">
-      <div style={{ display: "flex", height: "100vh" }}>
-        <Sidebar className="app">
-          <Menu>
-            <MenuItem
-              component={<Link to="/" className="link" />}
-              className="menu1"
-              icon={
-                <MenuRoundedIcon
-                  onClick={() => {
-                    collapseSidebar();
-                  }}
-                />
-              }>
-              <h2>Главная</h2>
-            </MenuItem>
-            <MenuItem icon={<EngineeringIcon />}
-                      component={<Link to="/skills" className="link" />}
-            >
-              Навыки </MenuItem>
-            <MenuItem icon={<WorkIcon />}
-                      component={<Link to="/projects" className="link" />}
-            >Проекты </MenuItem>
-            <MenuItem icon={<ContactsIcon />}
-                      component={<Link to="/contacts" className="link" />}
-            >Контакты</MenuItem>
-          </Menu>
-        </Sidebar>
-
-      <Routes>
-        <Route path="/" element={<Info/>}/>
-          <Route path="/contacts" element={<Contacts/>}/>
-          <Route path="/projects" element={<Projects/>}/>
-        <Route path="/skills" element={<Skills/>}/>
-        <Route path="*" element={<NotFound/>}/>
-      </Routes>
+      <div id="outer-container">
+        <Menu  customBurgerIcon={ <img src={red} /> } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
+          <a  className="menu-item" href="#home">Main</a>
+          <a  className="menu-item" href="#about">Skills</a>
+          <a  className="menu-item" href="/#projects">Projects</a>
+          <a  className="menu-item" href="#contact">Contact</a>
+        </Menu>
+        <nav className='nav'>
+          <a id="home" href="/"><Info/></a>
+          <a id="about" href="/about"><Skills/></a>
+          <a id="projects" href="/projects"><Projects/></a>
+          <a id="contact" href="/contact"><Contacts/></a>
+        </nav>
       </div>
     </div>
   );

@@ -1,9 +1,13 @@
 .project{
   color: black;
   flex: 1 0 auto;
+  max-width: 800px;
+  width: 100%;
   &__block {
     li {
       list-style-type: none; /* Убираем маркеры */
+      max-width: 800px;
+      width: 100%;
     }
     a {
       font-size: 20px;
@@ -30,4 +34,28 @@
     line-height: 45px;
   }
 
+}
+
+@media only screen and (max-width: 350px) {
+  .project{
+    max-width: 350px;
+    width: auto;
+    &__block {
+      li {
+        max-width: 300px;
+        width:auto;
+      }
+      a {
+        font-size: 12px;
+        padding: 10px;
+        margin: 10px;
+
+      }
+    }
+    &__title{
+      font-size:20px;
+      line-height: 25px;
+    }
+
+  }
 }

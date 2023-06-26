@@ -1,4 +1,4 @@
-import sad from "../images/Sad.svg";
+import sad from "../../images/Sad.svg";
 function NotFound() {
   return (
     <section>

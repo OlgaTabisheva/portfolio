@@ -6,6 +6,8 @@
   }
   &__block{
     margin-bottom: 30px;
+    max-width: 800px;
+    width: 100%;
   }
   &__text{
     font-size: 20px;
@@ -23,6 +25,28 @@
     &:hover {
       outline: 2px dashed #3d1f15; /* Ширина, вид и цвет рамки */
       outline-offset: -10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .skills {
+    &__title {
+      font-size: 20px;
+      line-height: 45px;
+    }
+
+    &__block {
+      margin-bottom: 30px;
+      max-width: 350px;
+      width: auto;
+    }
+
+    &__text {
+      font-size: 12px;
+      padding: 10px;
+      margin: 10px;
+
     }
   }
 }

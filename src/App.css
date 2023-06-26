@@ -9,7 +9,14 @@ body {
 }
 .app {
   background: #a8d5e5;
+
 }
+.nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   color: #165a72;
   margin: 50px auto;
@@ -18,7 +25,24 @@ h1 {
 .menu1 {
   margin-bottom: 40px;
   margin-top: 20px;
+  max-width: 250px;
+  width: 100%;
 }
 h2 {
   color: #165a72;
+}
+.bm-burger-button {
+  position: fixed;
+  width: 60px;
+  left: 36px;
+  top: 36px;
+}
+.bm-burger-bars {
+  background: #373a47;
+}
+.bm-menu {
+ padding-top: 10px;
+}
+::-webkit-scrollbar {
+  width: 0;
 }

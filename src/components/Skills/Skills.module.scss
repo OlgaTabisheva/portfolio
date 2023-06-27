@@ -4,6 +4,14 @@
     font-size:40px;
     line-height: 45px;
   }
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+  &__img{
+  padding-right: 10px;
+    height: 48px;
+  }
   &__block{
     margin-bottom: 30px;
     max-width: 800px;

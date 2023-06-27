@@ -4,8 +4,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 150vh;
-  background: #ffffff;
+
   font-size: 24px;
+  background-image: url("./images/pngwing.png");
+  background-repeat: space;
+  background-size: 200px 200px;
+  background-position: center;
 }
 .app {
   background: #a8d5e5;

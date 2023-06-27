@@ -4,9 +4,9 @@ import html from './../../images/html.svg'
 import js from './../../images/javascript.svg'
 import react from './../../images/react.svg'
 import redux from './../../images/redux.svg'
-
-
-
+import axios from './../../images/axios.svg'
+import bib from './../../images/seo-social.png'
+import git from './../../images/git.svg'
 function Skills() {
   return (
     <section className={cls.skills}>
@@ -17,9 +17,9 @@ function Skills() {
           <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={js} id='js'/>JavaScript</div></li>
           <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={react} id='react'/>React</div></li>
           <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={redux} id='redux'/>Redux (Redux Toolkit, React Redux)</div></li>
-          <li className={cls.skills__text}>Axios</li>
-          <li className={cls.skills__text}>Библиотеки готовых компонентов (mui, bootstrap)</li>
-          <li className={cls.skills__text}>Система контроля версий Git (GitHub)</li>
+          <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={axios} id='axios'/>Axios</div></li>
+          <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={bib} id='bib'/>Библиотеки готовых компонентов (mui, bootstrap)</div></li>
+          <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={git} id='git'/>Система контроля версий Git (GitHub)</div></li>
           <li className={cls.skills__text}>Трекер задач (Битрикс24)</li>
           <li className={cls.skills__text}>Docker (развертывание проекта по инструкции)</li>
           <li className={cls.skills__text}>Node.js (только учебный опыт)</li>

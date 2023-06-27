@@ -1,8 +1,6 @@
 .contacts{
 
   &__title{
-    font-size:40px;
-    line-height: 45px;
   }
   &__block{
     margin-bottom: 30px;
@@ -22,16 +20,13 @@
     transition: .3s ease-out;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 
-    &:hover {
-      outline: 2px dashed #3d1f15; /* Ширина, вид и цвет рамки */
-      outline-offset: -10px;
-    }
 
   }
 }
 li{
   list-style-type: none;
 }
+
 a {
   max-width: 1000px;
   width: 100%;
@@ -47,13 +42,14 @@ a {
   transition: .3s ease-out;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 
-
-  &:hover {
-    outline: 2px dashed #3d1f15; /* Ширина, вид и цвет рамки */
-    outline-offset: -10px;
-    opacity: 0.6;
-  }
 }
+
+.contacts__text_hover:hover {
+  outline: 2px dashed #3d1f15; /* Ширина, вид и цвет рамки */
+  outline-offset: -10px;
+  opacity: 0.6;
+}
+
 @media only screen and (max-width: 350px) {
   .contacts {
 

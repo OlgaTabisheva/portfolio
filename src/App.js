@@ -1,5 +1,4 @@
 import './App.css';
-import Main from "./components/Main/Main";
 import { push as Menu  } from 'react-burger-menu';
 import red from './images/menu_burger.svg';
 import Info from "./components/Info/Info";
@@ -24,10 +23,10 @@ function App() {
           <a  className="menu-item" href="#contact"><div className={cls.skills__box}><img className={cls.skills__img} src={cnt} id='cnt'/>Контакты</div></a>
         </Menu>
         <nav className='nav'>
-          <a id="top" href="/"><Info/></a>
-          <a id="about" href="/about"><Skills/></a>
-          <a id="projects" href="/projects"><Projects/></a>
-          <a id="contact" href="/contact"><Contacts/></a>
+          <a id="top" ><Info/></a>
+          <a id="about" ><Skills/></a>
+          <a id="projects" ><Projects/></a>
+          <a id="contact" ><Contacts/></a>
         </nav>
       </div>
     </div>

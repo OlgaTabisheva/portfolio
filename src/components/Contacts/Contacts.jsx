@@ -8,8 +8,8 @@ function Contacts() {
       <ol className={cont.contacts__block}>
           <li className={cont.contacts__text}>Почта: oliatabisheva@gmail.com</li>
           <li className={cont.contacts__text}>Телеграмм: https://t.me/oliatab</li>
-          <li><a href='https://github.com/OlgaTabisheva'>Гитхаб</a></li>
-          <li><a href='https://www.linkedin.com/in/olga-tabisheva-67541b258/'>linkedin</a></li>
+          <li><a className={cont.contacts__text_hover} href='https://github.com/OlgaTabisheva'>Гитхаб</a></li>
+          <li><a className={cont.contacts__text_hover} href='https://www.linkedin.com/in/olga-tabisheva-67541b258/'>linkedin</a></li>
       </ol>
     </section>
   )

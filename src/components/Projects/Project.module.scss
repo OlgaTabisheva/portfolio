@@ -21,6 +21,7 @@
       border-radius: 5px;
       transition: .3s ease-out;
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+      max-width: 600px;
 
       &:hover {
         outline: 2px dashed #3d1f15; /* Ширина, вид и цвет рамки */
@@ -30,8 +31,7 @@
     }
   }
   &__title{
-    font-size:40px;
-    line-height: 45px;
+
   }
 
 }

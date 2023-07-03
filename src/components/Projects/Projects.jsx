@@ -5,8 +5,8 @@ function Projects() {
       <div className={cls.project__block}>
         <h2 className={cls.project__title}>Мои внеучебные проекты:</h2>
         <ol className={cls.project__list}>
-          <li><a href='https://user-browser.746746746.xyz/profile'>Проект выполнен в качестве тестового задания, Redux toolkit, axios, css </a></li>
-          <li><a href='https://demoshop.746746746.xyz/'>Магазин на fake api. Пет проект, разработка не окончена</a></li>
+          <li><a href='https://user-browser.746746746.xyz/profile'>Проект выполнен в качестве тестового задания. Используемые технологии: React, Redux, axios, css.</a></li>
+          <li><a href='https://demoshop.746746746.xyz/'>Магазин на fake api. Пет проект, разработка не окончена. К сожалению бэкэнд "fake api" не стабилен, планирую переделать на другой.</a></li>
 
         </ol>
       </div>

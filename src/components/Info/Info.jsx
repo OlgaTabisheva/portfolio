@@ -1,8 +1,8 @@
-import './Info.module.scss'
+import cls from './Info.module.scss'
 
 function Info() {
   return (
-    <section>
+    <section className={cls.info}>
       <h2>Всем привет!</h2>
       <div>
         <p> Меня зовут Ольга и я frontend-разработчик. Начинала свой карьерный путь разработчика в  2021 году, когда пошла на курсы Яндекс-Практикума.

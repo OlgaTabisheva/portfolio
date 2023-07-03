@@ -22,7 +22,7 @@ body {
 }
 li{
   max-width: 600px;
-  width: 100%;
+  width: auto;
 }
 h1 {
   color: #165a72;
@@ -32,8 +32,7 @@ h1 {
 .menu1 {
   margin-bottom: 40px;
   margin-top: 20px;
-  max-width: 250px;
-  width: 100%;
+  width:initial;
 }
 h2 {
   color: #165a72;
@@ -52,4 +51,29 @@ h2 {
 }
 ::-webkit-scrollbar {
   width: 0;
+}
+
+
+@media only screen and (max-width: 1100px) {
+  li {
+    max-width: 340px;
+    width: 100%;
+
+  }
+  h2{
+    margin-left: 70px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .bm-burger-button {
+    width: 20px;
+  }
+  li {
+    max-width: 230px;
+    width: 100%;
+
+  }
+  h2{
+    margin-left: 0px;
+  }
 }

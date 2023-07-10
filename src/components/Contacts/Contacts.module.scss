@@ -20,6 +20,10 @@
     transition: .3s ease-out;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   }
+  &__img{
+    height: 30px;
+    margin-right: 10px;
+  }
 }
 li{
   list-style-type: none;
@@ -30,7 +34,7 @@ a {
   width: 100%;
   font-size: 20px;
   position: relative;
-  display: block;
+  display: flex;
   padding: 30px;
   margin: 30px;
   background: #a8d5e5;
@@ -39,8 +43,10 @@ a {
   border-radius: 5px;
   transition: .3s ease-out;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  align-items: center;
 
 }
+
 
 .contacts__text_hover:hover {
   outline: 2px dashed #3d1f15; /* Ширина, вид и цвет рамки */
@@ -106,7 +112,7 @@ a {
   }
   a {
     max-width: 300px;
-    width: auto;
+    width: 100%;
     font-size: 12px;
     border-radius: 5px;
     padding: 10px 5px 10px 5px;

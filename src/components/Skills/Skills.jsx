@@ -7,10 +7,19 @@ import redux from './../../images/redux.svg'
 import axios from './../../images/axios.svg'
 import bib from './../../images/seo-social.png'
 import git from './../../images/git.svg'
+import task from './../../images/task.svg'
+import docker from './../../images/docker.svg'
+import node from './../../images/node.svg'
+import figma from './../../images/figma.svg'
+import kanban from './../../images/kanban.svg'
+
+import {useTranslation} from "react-i18next";
+
 function Skills() {
+  const { t } = useTranslation()
   return (
     <section className={cls.skills}>
-      <h2 className={cls.skills__title}>Мои навыки:</h2>
+      <h2 className={cls.skills__title}>{t('skills')}</h2>
         <ol className={cls.skills__block}>
           <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={css} id='css'/>CSS (SCSS, Tailwind)</div></li>
           <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={html} id='html'/>HTML</div></li>
@@ -18,13 +27,13 @@ function Skills() {
           <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={react} id='react'/>React</div></li>
           <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={redux} id='redux'/>Redux (Redux Toolkit, React Redux)</div></li>
           <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={axios} id='axios'/>Axios</div></li>
-          <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={bib} id='bib'/>Библиотеки готовых компонентов (mui, bootstrap)</div></li>
-          <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={git} id='git'/>Система контроля версий Git (GitHub)</div></li>
-          <li className={cls.skills__text}>Трекер задач (Битрикс24)</li>
-          <li className={cls.skills__text}>Docker (развертывание проекта по инструкции)</li>
-          <li className={cls.skills__text}>Node.js (только учебный опыт)</li>
-          <li className={cls.skills__text}>Графический редактор figma (верстка по готовому макету)</li>
-          <li className={cls.skills__text}>Канбан доски и пр. (взаимодействие в trello, notion)</li>
+          <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={bib} id='bib'/>{t('libraries')}</div></li>
+          <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={git} id='git'/>{t('git')}</div></li>
+          <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={task} id='task'/>{t('task tracker')}</div></li>
+          <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={docker} id='docker'/>{t('Docker')}</div></li>
+          <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={node} id='node'/>{t('Node')}</div></li>
+          <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={figma} id='figma'/>{t('figma')}</div></li>
+          <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={kanban} id='kanban'/>{t('kanban')}</div></li>
         </ol>
     </section>
   )

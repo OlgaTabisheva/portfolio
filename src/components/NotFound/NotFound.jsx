@@ -1,5 +1,8 @@
 import sad from "../../images/Sad.svg";
+import {useTranslation} from "react-i18next";
+
 function NotFound() {
+  const { t } = useTranslation()
   return (
     <section>
       <div className='not-found'>

@@ -1,24 +1,24 @@
 import cls from './Project.module.scss'
+import {useTranslation} from "react-i18next";
+
 function Projects() {
+  const { t } = useTranslation()
   return (
     <section className={cls.project}>
       <div className={cls.project__block}>
-        <h2 className={cls.project__title}>Мои внеучебные проекты:</h2>
+        <h2 className={cls.project__title}>{t('project-non-educational')}</h2>
         <ol className={cls.project__list}>
-          <li><a href='https://user-browser.746746746.xyz/profile'>Проект выполнен в качестве тестового задания. Используемые технологии: React, Redux, axios, css.</a></li>
-          <li><a href='https://demoshop.746746746.xyz/'>Магазин на fake api. Пет проект, разработка не окончена. К сожалению бэкэнд "fake api" не стабилен, планирую переделать на другой.</a></li>
+          <li><a href='https://user-browser.746746746.xyz/profile'>{t('project1')}</a></li>
+          <li><a href='https://demoshop.746746746.xyz/'>{t('project2')}</a></li>
 
         </ol>
       </div>
       <div className={cls.project__block}>
-        <h2 className={cls.project__title}>Мои учебные проекты:</h2>
+        <h2 className={cls.project__title}>{t('project-study')}</h2>
         <ol className={cls.project__list}>
-          <li><a href='https://olgatabisheva.github.io/how-to-learn/'>Первый проект (научится учится)</a></li>
-          <li><a href='https://olgatabisheva.github.io/russian-travel/'>Первый адаптивный проект (путешествие по России)</a></li>
-          <li><a href='https://olgatabisheva.github.io/mesto-react/'>Проект место (вариант без бэкэнда)</a></li>
-
-
-
+          <li><a href='https://olgatabisheva.github.io/how-to-learn/'>{t('projectF')}</a></li>
+          <li><a href='https://olgatabisheva.github.io/russian-travel/'>{t('projectS')}</a></li>
+          <li><a href='https://olgatabisheva.github.io/mesto-react/'>{t('projectT')}</a></li>
         </ol>
       </div>
     </section>

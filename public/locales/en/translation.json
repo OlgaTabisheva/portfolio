@@ -1,0 +1,32 @@
+{
+  "welcome": "Welcome",
+  "goodbye": "Goodbye",
+  "Main": "Main",
+  "Skills": "Skills",
+  "Projects": "Projects",
+  "Contacts": "Contacts",
+  "Hi all": "Hello everyone!",
+  "paragraph 1": "My name is Olga and I am a frontend developer. I started my career path as a developer in 2021, when I took Yandex-Practicum courses. Until that moment, I was also interested in news and read books on HTML and CSS, tried to make statistical sites.",
+  "paragraph 2": "In development, I like to work for the result, I enjoy the work done.",
+  "paragraph 3": "After graduating from the St. Petersburg ITMO master's program in Photonics and Optoinformatics, I working for a long time as a design engineer in various companies. I was planning and looking for an opportunity to change my working specialty. After the Yandex courses, I became deeply interested in frontend development and any opportunities to replenish my knowledge, skills and portfolio.",
+  "skills": "My skills:",
+  "libraries": "libraries of ready-made components (mui, bootstrap)",
+  "git": "Git (GitHub)",
+"task tracker": "task tracker",
+  "Docker": "Docker (deploying the project according to the instructions)",
+  "Node": "Node.js (only learning experience)",
+  "figma": "Graphic editor figma (layout according to the finished layout)",
+  "kanban":"Kanban boards, etc. (interaction in trello, notion)",
+  "project-non-educational": "My non-educational projects:",
+  "project-study": "My study projects:",
+  "project1": "The project was completed as one of the test tasks. Technologies used: React, Redux, axios.",
+  "project2": "Online store on fake api. Main functions: shopping list, adding to cart, registration, authorization, likes and much more, details at the link. Unfortunately the \\\"fake api\\\" backend is not stable, I plan to change it to another one. The store will be improved.",
+  "projectF": "First educational project (learn to learn).",
+  "projectS": "First responsive Project (travel in Russia).",
+  "projectT": "Project place (option without backend).",
+  "contacts":"My contacts:",
+  "contact": "Mail: "
+
+
+
+}

@@ -10,19 +10,26 @@ import home from "./images/home.svg";
 import skills from "./images/computer.svg";
 import work from "./images/work.svg";
 import cnt from "./images/contact.svg";
+import { useTranslation } from 'react-i18next';
 
 function App() {
+  const { t, i18n } = useTranslation()
 
   return (
     <div className="App">
       <div id="outer-container">
         <Menu  customBurgerIcon={ <img src={red} /> } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
-          <a  className="menu-item" href="#info"><div className={cls.skills__box}><img className={cls.skills__img} src={home} id='home'/>Главная</div></a>
-          <a  className="menu-item" href="#about"><div className={cls.skills__box}><img className={cls.skills__img} src={skills} id='skills'/>Навыки</div></a>
-          <a  className="menu-item" href="#projects"><div className={cls.skills__box}><img className={cls.skills__img} src={work} id='work'/>Проекты</div></a>
-          <a  className="menu-item" href="#contact"><div className={cls.skills__box}><img className={cls.skills__img} src={cnt} id='cnt'/>Контакты</div></a>
+          <a  className="menu-item" href="#info"><div className={cls.skills__box}><img className={cls.skills__img} src={home} id='home'/>{t('Main')}</div></a>
+          <a  className="menu-item" href="#about"><div className={cls.skills__box}><img className={cls.skills__img} src={skills} id='skills'/>{t('Skills')}</div></a>
+          <a  className="menu-item" href="#projects"><div className={cls.skills__box}><img className={cls.skills__img} src={work} id='work'/>{t('Projects')}</div></a>
+          <a  className="menu-item" href="#contact"><div className={cls.skills__box}><img className={cls.skills__img} src={cnt} id='cnt'/>{t('Contacts')}</div></a>
         </Menu>
         <nav className='nav'>
+          <select className="menu-buttons" onChange={(e) => i18n.changeLanguage(e.target.value)}>
+            <option className="menu-button">Choose language</option>
+            <option className="menu-button" value="ru">Russian</option>
+            <option  className="menu-button" value="en">English</option>
+          </select>
           <a id="info" ><Info/></a>
           <a id="about" ><Skills/></a>
           <a id="projects" ><Projects/></a>

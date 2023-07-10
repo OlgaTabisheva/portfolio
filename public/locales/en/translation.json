@@ -20,12 +20,14 @@
   "project-non-educational": "My non-educational projects:",
   "project-study": "My study projects:",
   "project1": "The project was completed as one of the test tasks. Technologies used: React, Redux, axios.",
-  "project2": "Online store on fake api. Main functions: shopping list, adding to cart, registration, authorization, likes and much more, details at the link. Unfortunately the \\\"fake api\\\" backend is not stable, I plan to change it to another one. The store will be improved.",
+  "project2": "Online store on fake api. Main functions: shopping list, adding to cart, registration, authorization, likes and much more, details at the link. Unfortunately the \"fake api\" backend is not stable, I plan to change it to another one. The store will be improved.",
   "projectF": "First educational project (learn to learn).",
   "projectS": "First responsive Project (travel in Russia).",
   "projectT": "Project place (option without backend).",
   "contacts":"My contacts:",
-  "contact": "Mail: "
+  "contact": "Mail: ",
+  "404": "Error 404",
+  "404text": "Sorry, page is not available."
 
 
 

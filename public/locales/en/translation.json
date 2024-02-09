@@ -19,7 +19,7 @@
   "kanban":"Kanban boards, etc. (interaction in trello, notion)",
   "project-non-educational": "My non-educational projects:",
   "project-study": "My study projects:",
-  "project1": "The project was completed as one of the test tasks. Technologies used: React, Redux, axios.",
+  "project1": "Recipe project. Likes, comments, registration, adding/editing recipes and much more. The project is currently under development (a new design is being developed and functionality will be added and improved), front: React + scss, back: nHost(Hasura+GraphQL).\"",
   "project2": "Online store on fake api. Main functions: shopping list, adding to cart, registration, authorization, likes and much more, details at the link. Unfortunately the \"fake api\" backend is not stable, I plan to change it to another one. The store will be improved.",
   "projectF": "First educational project (learn to learn).",
   "projectS": "First responsive Project (travel in Russia).",

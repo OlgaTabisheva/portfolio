@@ -8,7 +8,8 @@ function Projects() {
       <div className={cls.project__block}>
         <h2 className={cls.project__title}>{t('project-non-educational')}</h2>
         <ol className={cls.project__list}>
-          <li><a href='https://user-browser.746746746.xyz/profile'>{t('project1')}</a></li>
+          <li><a href='https://cook-book.746746746.xyz/recipes'>{t('project1')}</a></li>
+          <li><a href='https://knot-store.746746746.xyz/'>{t('project3')}</a></li>
           <li><a href='https://demoshop.746746746.xyz/'>{t('project2')}</a></li>
 
         </ol>

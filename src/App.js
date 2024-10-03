@@ -23,7 +23,7 @@ function App() {
       <div id="outer-container">
         <Menu  customBurgerIcon={ <img src={red} /> } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
           <a  className="menu-item" href="#info"><div className={cls.skills__box}><img className={cls.skills__img} src={home} id='home'/>{t('Main')}</div></a>
-          <a  className="menu-item" href="#education"><div className={cls.skills__box}><img className={cls.skills__img} src={education} id='education'/>{t('education')}</div></a>
+          <a  className="menu-item" href="#education"><div className={cls.skills__box}><img className={cls.skills__img} src={education} id='education'/>{t('Education')}</div></a>
           <a  className="menu-item" href="#about"><div className={cls.skills__box}><img className={cls.skills__img} src={skills} id='skills'/>{t('Skills')}</div></a>
           <a  className="menu-item" href="#projects"><div className={cls.skills__box}><img className={cls.skills__img} src={work} id='work'/>{t('Projects')}</div></a>
           <a  className="menu-item" href="#contact"><div className={cls.skills__box}><img className={cls.skills__img} src={cnt} id='cnt'/>{t('Contacts')}</div></a>
@@ -34,11 +34,11 @@ function App() {
             <option className="menu-button" value="ru">Russian</option>
             <option  className="menu-button" value="en">English</option>
           </select>
-          <a id="info" ><Info/></a>
-          <a id="education" ><Education/></a>
-          <a id="about" ><Skills/></a>
-          <a id="projects" ><Projects/></a>
-          <a id="contact" ><Contacts/></a>
+          <a href="#info" id="info" ><Info/></a>
+          <a href="#education" id="education"><Education/></a>
+          <a href="#about" id="about" ><Skills/></a>
+          <a href="#projects" id="projects" ><Projects/></a>
+          <a href="#contact" id="contact" ><Contacts/></a>
         </nav>
       </div>
     </div>

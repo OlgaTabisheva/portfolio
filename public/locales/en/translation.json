@@ -9,6 +9,10 @@
   "paragraph 1": "My name is Olga and I am a frontend developer. I started my career path as a developer in 2021, when I took Yandex-Practicum courses. Until that moment, I was also interested in news and read books on HTML and CSS, tried to make statistical sites.",
   "paragraph 2": "In development, I like to work for the result, I enjoy the work done.",
   "paragraph 3": "After graduating from the St. Petersburg ITMO master's program in Photonics and Optoinformatics, I working for a long time as a design engineer in various companies. I was planning and looking for an opportunity to change my working specialty. After the Yandex courses, I became deeply interested in frontend development and any opportunities to replenish my knowledge, skills and portfolio.",
+  "paragraph 4": "Skills: HTML,CSS,SCSS, JavaScript, Typescript, React, Hasura(nHost), Firebase, etc.",
+  "paragraph 5": "2012, St. Petersburg National Research University of Information Technologies, Mechanics and Optics, St. Petersburg, Photonics and Optical Informatics (Bachelor)",
+  "paragraph 6": "2014, St. Petersburg National Research University of Information Technologies, Mechanics and Optics, St. Petersburg, Photonics and Optical Informatics (Master)",
+  "paragraph 7": "2022, Yandex Workshop, ANO DPO SHAD, Professional retraining - Profession “Web developer” in the amount of 560 hours.",
   "skills": "My skills:",
   "libraries": "libraries of ready-made components (mui, bootstrap)",
   "git": "Git (GitHub)",
@@ -28,7 +32,9 @@
   "contacts":"My contacts:",
   "contact": "Mail: ",
   "404": "Error 404",
-  "404text": "Sorry, page is not available."
+  "404text": "Sorry, page is not available.",
+  "education": "Education",
+  "MyEducation": "MyEducation"
 
 
 

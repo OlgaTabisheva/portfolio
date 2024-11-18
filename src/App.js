@@ -23,7 +23,7 @@ function App() {
       <div id="outer-container">
         <Menu  customBurgerIcon={ <img src={red} /> } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
           <a  className="menu-item" href="#info"><div className={cls.skills__box}><img className={cls.skills__img} src={home} id='home'/>{t('Main')}</div></a>
-          <a  className="menu-item" href="#education"><div className={cls.skills__box}><img className={cls.skills__img} src={education} id='education'/>{t('Education')}</div></a>
+          <a  className="menu-item" href="#education"><div className={cls.skills__box}><img className={cls.skills__img} src={education} id='Education'/>{t('Education')}</div></a>
           <a  className="menu-item" href="#about"><div className={cls.skills__box}><img className={cls.skills__img} src={skills} id='skills'/>{t('Skills')}</div></a>
           <a  className="menu-item" href="#projects"><div className={cls.skills__box}><img className={cls.skills__img} src={work} id='work'/>{t('Projects')}</div></a>
           <a  className="menu-item" href="#contact"><div className={cls.skills__box}><img className={cls.skills__img} src={cnt} id='cnt'/>{t('Contacts')}</div></a>

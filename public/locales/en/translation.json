@@ -7,9 +7,15 @@
   "Contacts": "Contacts",
   "Hi all": "Hello everyone!",
   "paragraph 1": "My name is Olga and I am a frontend developer. I started my career path as a developer in 2021, when I took Yandex-Practicum courses. Until that moment, I was also interested in news and read books on HTML and CSS, tried to make statistical sites.",
-  "paragraph 2": "In development, I like to work for the result, I enjoy the work done.",
-  "paragraph 3": "After graduating from the St. Petersburg ITMO master's program in Photonics and Optoinformatics, I working for a long time as a design engineer in various companies. I was planning and looking for an opportunity to change my working specialty. After the Yandex courses, I became deeply interested in frontend development and any opportunities to replenish my knowledge, skills and portfolio.",
-  "paragraph 4": "Skills: HTML,CSS,SCSS, JavaScript, Typescript, React, Hasura(nHost), Firebase, etc.",
+  "paragraph 2":"I'm currently looking for a remote job in development. I work with HTML and CSS (SCSS, had experience with tailwind), JS (TypeScript), React, responsive design, Git (GitHub, GitLab) and much more. I have experience working with GraphQl (Hasura), nhost. I develop my own projects and participated in internships. I am developing and learning new things thanks to my pet projects. Thanks to participation in internships, I have experience communicating with the development team, web designers, and testers.",
+  "paragraph 3": "In my free time I work on my pet projects. At the moment, I started working on a website project to search for apartments/offices for rent. With this project I began to study Next.js in practice.",
+  "paragraph 4": "In development, I like to work for the result, I enjoy the work done.",
+  "paragraph 4.1": "After graduating from the St. Petersburg ITMO master's program in Photonics and Optoinformatics, I working for a long time as a design engineer in various companies. I was planning and looking for an opportunity to change my working specialty. After the Yandex courses, I became deeply interested in frontend development and any opportunities to replenish my knowledge, skills and portfolio.",
+  "paragraph 4.2": "Skills: HTML,CSS,SCSS, JavaScript, Typescript, React, Hasura(nHost), Firebase, etc.",
+  
+  
+  
+  
   "paragraph 5": "2012, St. Petersburg National Research University of Information Technologies, Mechanics and Optics, St. Petersburg, Photonics and Optical Informatics (Bachelor)",
   "paragraph 6": "2014, St. Petersburg National Research University of Information Technologies, Mechanics and Optics, St. Petersburg, Photonics and Optical Informatics (Master)",
   "paragraph 7": "2022, Yandex Workshop, ANO DPO SHAD, Professional retraining - Profession “Web developer” in the amount of 560 hours.",

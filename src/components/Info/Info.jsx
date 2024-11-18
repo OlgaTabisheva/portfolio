@@ -11,6 +11,8 @@ function Info() {
         <p>{t('paragraph 2')}</p>
         <p>{t('paragraph 3')}</p>
         <p>{t('paragraph 4')}</p>
+        <p>{t('paragraph 4.1')}</p>
+        <p>{t('paragraph 4.2')}</p>
       </div>
 
 

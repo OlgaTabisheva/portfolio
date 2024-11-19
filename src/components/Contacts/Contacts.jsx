@@ -10,7 +10,7 @@ function Contacts() {
   const { t } = useTranslation()
   return (
     <section className={cont.contacts}>
-      <h2 className={cont.contacts__title}>{t('contacts')}</h2>
+      {/* <h2 className={cont.contacts__title}>{t('contacts')}</h2> */}
       <ol className={cont.contacts__block}>
         <li><a className={cont.contacts__text_hover} href='mailto:oliatabisheva@gmail.com'><img className={cont.contacts__img} src={mail} id='mail'/>{t('contact')}
            oliatabisheva@gmail.com</a></li>

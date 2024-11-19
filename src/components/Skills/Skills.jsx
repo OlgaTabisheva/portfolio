@@ -19,7 +19,7 @@ function Skills() {
   const { t } = useTranslation()
   return (
     <section className={cls.skills}>
-      <h2 className={cls.skills__title}>{t('skills')}</h2>
+      {/* <h2 className={cls.skills__title}>{t('skills')}</h2> */}
         <ol className={cls.skills__block}>
           <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={css} id='css'/>CSS (SCSS, Tailwind)</div></li>
           <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={html} id='html'/>HTML</div></li>

@@ -5,8 +5,7 @@
 }
 ////////////////////
 .app {
-  background: #e9f2f2;
-
+  background: $coverColor;
   &__outerContainer {
     @extend %text17-20;
     z-index: 1;
@@ -57,6 +56,7 @@
     align-items: center;
   }
   &__menuButtons {
+    font-family: $stock-font !important;
     border: none;
     background-image: url("./images/pngwing.png");
     background-repeat: space;
@@ -78,7 +78,7 @@
     }
   }
   &__menuButton {
-    font-family: $stock-font;
+    font-family: $stock-font !important;
     border: none;
     padding: 15px;
     margin: 25px 5px 25px 5px;
@@ -101,7 +101,6 @@
     background: #a8d5e5;
     color: black;
     text-decoration: none;
- 
     transition: 0.3s ease-out;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     max-width: 870px;

@@ -1,3 +1,6 @@
+@import "./../../../public/variables.scss";
+
+
 .info {
   max-width: 800px;
   width: 100%;
@@ -13,6 +16,25 @@
   &__boxText{
     max-width: 500px;
     width: 100%;
+  }
+  &__list {
+    margin: 0 0 0 -30px;
+    padding: 0;
+    list-style-type:none; /* Убираем маркеры */
+    max-width: 800px;
+    width: 100%;
+  }
+  &__listSmall{
+    list-style-type: circle !important;
+  }
+  &__text {
+    @extend %text17-20;
+    text-decoration: none;
+    color: $classicBlack;
+    max-width: 350px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 }
 /* p{

@@ -1,0 +1,140 @@
+$stock-font: "Roboto", serif;
+$classicBlack: #000000;
+$coverColor: #e9f2f2;
+$lightBlue:#a8d5e5;
+
+%text14-17 {
+  font-family: $stock-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+%text17-20 {
+  font-family: $stock-font;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+%title24-29 {
+  font-family: $stock-font;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.26px;
+  text-align: left;
+  color: #165a72;
+ 
+}
+
+
+
+
+
+
+
+$classicBlack: #000000;
+$black: #292929;
+$levisLushMarble: #3b3d3e;
+$reseneNocturnal:#2f3131; 
+$Maroon: #800000;
+
+
+//
+$light-brown: #f7ebe5;
+$middle-grey: #ededf0;
+$light-grey: #f7f7f7;
+$white: white;
+$blue-buttons: #4e9dd3;
+$accent: #da6060;
+$brown: #a0522d;
+$middle-brown: #deb887;
+$topColor: #f7ebe5;
+$box-shadow: 3px 3px #ededf0, -1em 0 0.4em #ededf0;
+$box-shadow2: 10px 5px 5px #ededf0;
+$cadetBlue: #5F9EA0;
+
+
+
+%title30-36 {
+  font-family: $stock-font;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36.57px;
+  text-align: center;
+}
+
+// mixins
+@mixin auth {
+  &__box {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  &__buttonBox {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  &__link {
+    margin-top: 20px;
+    text-align: center;
+    font-family: $stock-font;
+    color: $black;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  @media only screen and (max-width: 1000px) {
+    &__box {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@mixin title {
+  @extend %title30-36;
+  font-weight: 600;
+  text-align: center;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@media only screen and (max-width: 1318px) {
+
+}
+
+@media only screen and (max-width: 786px) {
+}

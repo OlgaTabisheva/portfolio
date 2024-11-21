@@ -1,0 +1,193 @@
+@import "./../public/variables.scss";
+
+::-webkit-scrollbar {
+  width: 0;
+}
+////////////////////
+.app {
+  background: #e9f2f2;
+
+  &__outerContainer {
+    @extend %text17-20;
+    z-index: 1;
+    padding-bottom: 300px;
+    margin: 0;
+    padding: 30px 0 0 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 150vh;
+    background-image: url("./images/pngwing.png");
+    background-repeat: space;
+    background-size: 200px 200px;
+    background-position: center;
+    height: 100%;
+  }
+  &__menuBox {
+    max-width: 70px;
+    width: 100px;
+  }
+  &__menuItem {
+    max-width: 600px;
+    width: 100%;
+    //font-size: 20px;
+    position: relative;
+    display: flex;
+    padding: 30px;
+    margin: 30px;
+    background: #a8d5e5;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease-out;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    align-items: center;
+
+    &:hover {
+      background-color: #165a72;
+    }
+  }
+  &__menuImg {
+    max-width: 50px;
+    width: 100%;
+    height: 100%;
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__menuButtons {
+    border: none;
+    background-image: url("./images/pngwing.png");
+    background-repeat: space;
+    background-size: 200px 200px;
+    width: 100%;
+    max-width: 1000px;
+    @extend %text17-20;
+    padding: 15px 15px 15px 100px;
+    background-color: #a8d5e5;
+    margin: 10px;
+    appearance: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__menuButton {
+    font-family: $stock-font;
+    border: none;
+    padding: 15px;
+    margin: 25px 5px 25px 5px;
+    line-height: 20px;
+    border-radius: 0;
+    appearance: none;
+    color: black;
+    cursor: pointer;
+    &:hover {
+      background-color: #165a72;
+      cursor: pointer !important;
+    }
+  }
+  &__menuItemBox {
+   // font-size: 20px;
+   border-radius: 10px;
+    position: relative;
+    display: block;
+    padding: 30px 30px 30px 100px;
+    background: #a8d5e5;
+    color: black;
+    text-decoration: none;
+ 
+    transition: 0.3s ease-out;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    max-width: 870px;
+    min-width: 870px;
+    width: 100%;
+    margin: 30px;
+    background-image: url("./images/pngwing.png");
+    background-repeat: space;
+    background-size: 200px 200px;
+    background-position: center;
+  }
+
+  &__menuItemLink {
+    @extend %title24-29;
+    color: inherit;
+    cursor: alias;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    //font-size: 26px;
+    line-height: 30px;
+    color: #165a72;
+  }
+}
+
+li {
+  max-width: 600px;
+  width: auto;
+}
+h1 {
+  color: #165a72;
+  margin: 50px auto;
+ // font-size: 40px;
+}
+.menu1 {
+  margin-bottom: 40px;
+  margin-top: 20px;
+  width: initial;
+}
+/* h2 {
+  color: #165a72;
+} */
+
+@media only screen and (max-width: 1100px) {
+  li {
+    max-width: 340px;
+    width: 100%;
+  }
+  h2 {
+    margin-left: 70px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .bm-burger-button {
+    width: 20px;
+  }
+  li {
+    max-width: 230px;
+    width: 100%;
+  }
+  h2 {
+    margin-left: 0px;
+  }
+
+  .menu-buttons {
+    padding: 5px 5px 5px 100px;
+    background-color: #a8d5e5;
+    margin: 5px 5px 5px 100px;
+    //font-size: 16px;
+    appearance: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #165a72;
+   // font-weight: bold;
+  }
+  .menu-button {
+    background-color: #a8d5e5;
+    border: none;
+    padding: 5px;
+    margin: 25px 5px 25px 5px;
+    //-size: 14px;
+    line-height: 14px;
+    border-radius: 0;
+    appearance: none;
+    color: #165a72;
+   // font-weight: bold;
+  }
+}

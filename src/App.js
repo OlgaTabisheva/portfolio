@@ -1,4 +1,6 @@
-import "./App.css";
+import style from "./App.module.scss";
+import "./burger.css";
+
 import { slide as Menu } from "react-burger-menu";
 import red from "./images/menu_burger.svg";
 import Info from "./components/Info/Info";
@@ -19,88 +21,122 @@ function App() {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className="App">
-      <div id="outer-container" className="outerContainer">
-        <Menu
-          customBurgerIcon={<img src={red} alt="img" />}
-          pageWrapId={"page-wrap"}
-          outerContainerId={"outer-container"}
-        >
-          <a className="menu-item" href="#info">
-            <div className={cls.skills__box}>
-              <img className={cls.skills__img} src={home} id="home" />
-              {t("Main")}
-            </div>
-          </a>
-          <a className="menu-item" href="#education">
-            <div className={cls.skills__box}>
-              <img className={cls.skills__img} src={education} id="Education" />
-              {t("Education")}
-            </div>
-          </a>
-          <a className="menu-item" href="#about">
-            <div className={cls.skills__box}>
-              <img className={cls.skills__img} src={skills} id="skills" />
-              {t("Skills")}
-            </div>
-          </a>
-          <a className="menu-item" href="#projects">
-            <div className={cls.skills__box}>
-              <img className={cls.skills__img} src={work} id="work" />
-              {t("Projects")}
-            </div>
-          </a>
-          <a className="menu-item" href="#contact">
-            <div className={cls.skills__box}>
-              <img className={cls.skills__img} src={cnt} id="cnt" />
-              {t("Contacts")}
-            </div>
-          </a>
-        </Menu>
-        <nav className="nav">
+    <div className={style.app}>
+      <div id="outer-container" className={style.app__outerContainer}>
+        <div className={style.app__menuBox}>
+          <Menu
+            customBurgerIcon={
+              <img src={red} alt="img" className={style.app__menuImg} />
+            }
+            pageWrapId={"page-wrap"}
+            outerContainerId={"outer-container"}
+          >
+            <a className={style.app__menuItem} href="#info">
+              <div className={cls.skills__box}>
+                <img
+                  className={cls.skills__img}
+                  src={home}
+                  id="home"
+                  alt="home"
+                />
+                {t("Main")}
+              </div>
+            </a>
+
+            <a className={style.app__menuItem} href="#skills">
+              <div>
+                <img
+                  className={cls.skills__img}
+                  src={skills}
+                  id="skills"
+                  alt="skills"
+                />
+                {t("Skills")}
+              </div>
+            </a>
+            <a className={style.app__menuItem} href="#projects">
+              <div className={cls.skills__box}>
+                <img
+                  className={cls.skills__img}
+                  src={work}
+                  id="work"
+                  alt="work"
+                />
+                {t("Projects")}
+              </div>
+            </a>
+            <a className={style.app__menuItem} href="#education">
+              <div className={cls.skills__box}>
+                <img
+                  className={cls.skills__img}
+                  src={education}
+                  id="Education"
+                  alt="education"
+                />
+                {t("Education")}
+              </div>
+            </a>
+            <a className={style.app__menuItem} href="#contact">
+              <div className={cls.skills__box}>
+                <img className={cls.skills__img} src={cnt} id="cnt" alt="cnt" />
+                {t("Contacts")}
+              </div>
+            </a>
+          </Menu>
+        </div>
+        <nav className={style.app__nav}>
           <select
-            className="menu-buttons"
+            className={style.app__menuButtons}
             onChange={(e) => i18n.changeLanguage(e.target.value)}
           >
-            <option className="menu-button">Choose language</option>
-            <option className="menu-button" value="ru">
-              Russian
+            <option className={style.app__menuButton} value="ru">
+              Choose language/Russian
             </option>
-            <option className="menu-button" value="en">
-              English
+
+            <option className={style.app__menuButton} value="en">
+              Choose language/English
             </option>
           </select>
 
-          <div className="menu-item__box">
-            <a className="menu-item__link" href="#info" id="info">
+          <div className={style.app__menuItemBox}>
+            <a className={style.app__menuItemLink} href="#info" id="info">
               Информация
             </a>
             <Info />
           </div>
-          <div className="menu-item__box">
-            <a className="menu-item__link" href="#education" id="education">
+          <div className={style.app__menuItemBox}>
+            <a className={style.app__menuItemLink} href="#skills" id="skills">
+              {t("Skills")}
+            </a>
+            <Skills />
+          </div>
+
+          <div className={style.app__menuItemBox}>
+            <a
+              className={style.app__menuItemLink}
+              href="#projects"
+              id="projects"
+            >
+              {t("project-non-educational")}
+            </a>
+            <Projects />
+          </div>
+          <div className={style.app__menuItemBox}>
+            <a
+              className={style.app__menuItemLink}
+              href="#education"
+              id="education"
+            >
               Образование
             </a>
             <Education />
           </div>
-          <div className="menu-item__box">
-            <a className="menu-item__link" href="#skills" id="skills">
-            {t('skills')}
-            </a>
-            <Skills />
+          <div className={style.app__menuItemBox}>
+            <a className={style.app__menuItemLink} href="#contact" id="contact">
+              {t("contacts")}
+            </a>{" "}
+            <Contacts />
           </div>
-          <div className="menu-item__box">
-            <a className="menu-item__link" href="#projects" id="projects">
-            {t('project-non-educational')}
-            </a>
-            <Projects />
-          </div>
-          <div className="menu-item__box">
-            <a className="menu-item__link" href="#contact" id="contact">
-            {t('contacts')}
-            </a>  <Contacts />
-          </div>
-        
         </nav>
       </div>
     </div>
@@ -108,5 +144,3 @@ function App() {
 }
 
 export default App;
-
-    

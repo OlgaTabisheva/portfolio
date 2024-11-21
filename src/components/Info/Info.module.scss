@@ -2,6 +2,18 @@
   max-width: 800px;
   width: 100%;
   cursor: default;
+  &__box{
+    display: flex;
+  }
+  &__img{
+    width: 280px;
+    padding: 20px;
+    border-radius: 30px;
+  }
+  &__boxText{
+    max-width: 500px;
+    width: 100%;
+  }
 }
 /* p{
   margin-left: 50px;

@@ -5,7 +5,7 @@ function Education() {
   const { t } = useTranslation()
   return (
     <section className={cls.info}>
-      <h2>{t('MyEducation')}</h2>
+     {/*  <h2>{t('MyEducation')}</h2> */}
       <div>
         <p>{t('paragraph 5')}</p>
         <p>{t('paragraph 6')}</p>

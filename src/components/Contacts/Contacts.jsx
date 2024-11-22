@@ -12,7 +12,7 @@ function Contacts() {
     <section className={cont.contacts}>
       {/* <h2 className={cont.contacts__title}>{t('contacts')}</h2> */}
       <ol className={cont.contacts__block}>
-        <li className={cont.contacts__blockLi}><a className={cont.contacts__text_hover} href='mailto:oliatabisheva@gmail.com'><img className={cont.contacts__img} src={mail} id='mail' alt='mail'/>{t('contact')}</a></li>
+        <li className={cont.contacts__blockLi}><a className={cont.contacts__text_hover} href='mailto:oliatabisheva@gmail.com'><img className={cont.contacts__img} src={mail} id='mail' alt='mail'/>Gmail</a></li>
         <li><a className={cont.contacts__text_hover} href='https://t.me/oliatab'><img className={cont.contacts__img} src={tg} id='tg' alt='tg'/>Telegtam</a></li>
         <li><a className={cont.contacts__text_hover} href='https://github.com/OlgaTabisheva'><img className={cont.contacts__img} src={git} id='git' alt='git'/>Github</a></li>
         <li><a className={cont.contacts__text_hover}

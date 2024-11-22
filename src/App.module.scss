@@ -11,7 +11,7 @@
     z-index: 1;
     padding-bottom: 300px;
     margin: 0;
-    padding: 30px 0 0 0;
+    padding: 30px 0 30px 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     height: 150vh;
@@ -93,8 +93,8 @@
     }
   }
   &__menuItemBox {
-   // font-size: 20px;
-   border-radius: 10px;
+    // font-size: 20px;
+    border-radius: 10px;
     position: relative;
     display: block;
     padding: 30px 30px 30px 100px;
@@ -147,31 +147,28 @@ h1 {
 @media only screen and (max-width: 1200px) {
   .app {
     &__nav {
-    margin-left: 100px;
+      margin-left: 100px;
     }
     &__menuItemBox {
-       padding: 20px 20px 20px 30px;
-       max-width: 730px;
-       min-width: 730px;
-     }
+      padding: 20px 20px 20px 30px;
+      max-width: 730px;
+      min-width: 730px;
+    }
     &__menuButtons {
       max-width: 800px;
     }
   }
-
-
 }
 @media only screen and (max-width: 950px) {
-
   .app {
     &__nav {
-    margin-left: 100px;
+      margin-left: 100px;
     }
     &__menuItemBox {
-       padding: 10px 10px 10px 30px;
-       max-width: 450px;
-       min-width: 450px;
-     }
+      padding: 10px 10px 10px 30px;
+      max-width: 450px;
+      min-width: 450px;
+    }
     &__menuButtons {
       max-width: 490px;
     }
@@ -181,29 +178,28 @@ h1 {
 @media only screen and (max-width: 600px) {
   .app {
     &__nav {
-    max-width: 300px;
+      max-width: 300px;
     }
     &__menuItemBox {
       background-size: 50px 50px;
       padding: 10px;
       max-width: 250px;
       min-width: 50px;
-     }
+    }
     &__menuButtons {
       padding: 15px;
       max-width: 230px;
     }
     &__outerContainer {
       background-size: 50px 50px;
-    
     }
   }
 }
 @media only screen and (max-width: 400px) {
   .app {
     &__nav {
-    max-width: 300px;
-    margin-left: 15px;
+      max-width: 300px;
+      margin-left: 15px;
     }
   }
 }

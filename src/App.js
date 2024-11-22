@@ -48,8 +48,8 @@ function App() {
                 <img
                   className={cls.skills__img}
                   src={skills}
-                  id="skills"
-                  alt="skills"
+                  id="skills2"
+                  alt="skills1"
                 />
                 {t("Skills")}
               </div>

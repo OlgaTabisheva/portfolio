@@ -15,3 +15,12 @@
     margin: -30px;
    ;
   }
+  @media only screen and (max-width: 400px) {
+    .bm-burger-button {
+ 
+      position: fixed;
+      width: 20px;
+      left: 5px;
+      top: 50px;
+    }
+  }

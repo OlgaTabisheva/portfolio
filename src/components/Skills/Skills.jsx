@@ -13,6 +13,8 @@ import docker from "./../../images/docker.svg";
 import node from "./../../images/node.svg";
 import figma from "./../../images/figma.svg";
 import kanban from "./../../images/task.svg";
+import next from "./../../images/nextjs-icon-svgrepo-com.svg";
+
 import res from "./../../images/responsive_design_8rugpdgjj8fu.svg";
 
 function Skills() {
@@ -54,6 +56,12 @@ function Skills() {
           <div className={cls.skills__box}>
             <img className={cls.skills__img} src={react} id="react" alt='react'/>
             React
+          </div>
+        </li>
+        <li className={cls.skills__text}>
+          <div className={cls.skills__box}>
+            <img className={cls.skills__img} src={next} id="next" alt='next'/>
+            Next.js
           </div>
         </li>
         <li className={cls.skills__text}>

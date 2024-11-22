@@ -8,7 +8,7 @@ function Projects() {
     <section className={cls.project}>
       <div className={cls.project__block}>
         <ol className={cls.project__list}>
-          <li className={cls.project__listBox}>
+          <li className={cls.project__listBox1}>
             <div className={cls.project__textBox}>
               <p className={cls.project__text}>{t("project1")}</p>
               <p className={cls.project__text}>{t("project1.1")}</p>
@@ -46,7 +46,7 @@ function Projects() {
             </a>
           </li>
           <div className={cls.project__createLine}></div>
-          <li className={cls.project__listBox}>
+          <li className={cls.project__listBox2}>
             <a
               className={cls.project__linkCover}
               href="https://knot-store.746746746.xyz/"

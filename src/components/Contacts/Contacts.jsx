@@ -12,12 +12,11 @@ function Contacts() {
     <section className={cont.contacts}>
       {/* <h2 className={cont.contacts__title}>{t('contacts')}</h2> */}
       <ol className={cont.contacts__block}>
-        <li><a className={cont.contacts__text_hover} href='mailto:oliatabisheva@gmail.com'><img className={cont.contacts__img} src={mail} id='mail'/>{t('contact')}
-           oliatabisheva@gmail.com</a></li>
-        <li><a className={cont.contacts__text_hover} href='https://t.me/oliatab'><img className={cont.contacts__img} src={tg} id='tg'/>Telegtam: https://t.me/oliatab</a></li>
-        <li><a className={cont.contacts__text_hover} href='https://github.com/OlgaTabisheva'><img className={cont.contacts__img} src={git} id='git'/>Github: https://github.com/OlgaTabisheva</a></li>
+        <li className={cont.contacts__blockLi}><a className={cont.contacts__text_hover} href='mailto:oliatabisheva@gmail.com'><img className={cont.contacts__img} src={mail} id='mail' alt='mail'/>{t('contact')}</a></li>
+        <li><a className={cont.contacts__text_hover} href='https://t.me/oliatab'><img className={cont.contacts__img} src={tg} id='tg' alt='tg'/>Telegtam</a></li>
+        <li><a className={cont.contacts__text_hover} href='https://github.com/OlgaTabisheva'><img className={cont.contacts__img} src={git} id='git' alt='git'/>Github</a></li>
         <li><a className={cont.contacts__text_hover}
-               href='https://www.linkedin.com/in/olga-tabisheva-67541b258/'><img className={cont.contacts__img} src={ln} id='ln'/>linkedin: https://www.linkedin.com/in/olga-tabisheva-67541b258/</a></li>
+               href='https://www.linkedin.com/in/olga-tabisheva-67541b258/'><img className={cont.contacts__img} src={ln} id='ln' alt='ln'/>linkedin</a></li>
       </ol>
     </section>
   )

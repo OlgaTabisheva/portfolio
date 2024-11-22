@@ -126,7 +126,7 @@
   }
 }
 
-li {
+/* li {
   max-width: 600px;
   width: auto;
 }
@@ -139,54 +139,71 @@ h1 {
   margin-bottom: 40px;
   margin-top: 20px;
   width: initial;
-}
+} */
 /* h2 {
   color: #165a72;
 } */
 
-@media only screen and (max-width: 1100px) {
-  li {
-    max-width: 340px;
-    width: 100%;
-  }
-  h2 {
-    margin-left: 70px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .bm-burger-button {
-    width: 20px;
-  }
-  li {
-    max-width: 230px;
-    width: 100%;
-  }
-  h2 {
-    margin-left: 0px;
+@media only screen and (max-width: 1200px) {
+  .app {
+    &__nav {
+    margin-left: 100px;
+    }
+    &__menuItemBox {
+       padding: 20px 20px 20px 30px;
+       max-width: 730px;
+       min-width: 730px;
+     }
+    &__menuButtons {
+      max-width: 800px;
+    }
   }
 
-  .menu-buttons {
-    padding: 5px 5px 5px 100px;
-    background-color: #a8d5e5;
-    margin: 5px 5px 5px 100px;
-    //font-size: 16px;
-    appearance: none;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    color: #165a72;
-   // font-weight: bold;
+
+}
+@media only screen and (max-width: 950px) {
+
+  .app {
+    &__nav {
+    margin-left: 100px;
+    }
+    &__menuItemBox {
+       padding: 10px 10px 10px 30px;
+       max-width: 450px;
+       min-width: 450px;
+     }
+    &__menuButtons {
+      max-width: 490px;
+    }
   }
-  .menu-button {
-    background-color: #a8d5e5;
-    border: none;
-    padding: 5px;
-    margin: 25px 5px 25px 5px;
-    //-size: 14px;
-    line-height: 14px;
-    border-radius: 0;
-    appearance: none;
-    color: #165a72;
-   // font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .app {
+    &__nav {
+    max-width: 300px;
+    }
+    &__menuItemBox {
+      background-size: 50px 50px;
+      padding: 10px;
+      max-width: 250px;
+      min-width: 50px;
+     }
+    &__menuButtons {
+      padding: 15px;
+      max-width: 230px;
+    }
+    &__outerContainer {
+      background-size: 50px 50px;
+    
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .app {
+    &__nav {
+    max-width: 300px;
+    margin-left: 15px;
+    }
   }
 }

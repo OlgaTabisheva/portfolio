@@ -2,8 +2,11 @@
  
     position: fixed;
     width: 60px;
-    left: 36px;
-    top: 36px;
+    left: 15px;
+    top: 10px;
+  }
+  .bm-burger-button:hover{
+    opacity: 0.6;
   }
   .bm-burger-bars {
     background: #373a47;
@@ -12,7 +15,10 @@
     padding-top: 10px;
   }
   .bm-overlay{
-    margin: -30px;
+    margin-top: -30px;
+  }
+  .bm-item{
+    max-width: 200px
    ;
   }
   @media only screen and (max-width: 400px) {
@@ -21,6 +27,6 @@
       position: fixed;
       width: 20px;
       left: 5px;
-      top: 50px;
+      top: 10px;
     }
   }

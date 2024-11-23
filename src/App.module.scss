@@ -11,7 +11,8 @@
     z-index: 1;
     padding-bottom: 300px;
     margin: 0;
-    padding: 30px 0 30px 0;
+    padding: 0;
+   // padding: 30px 0 30px 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     height: 150vh;
@@ -21,9 +22,31 @@
     background-position: center;
     height: 100%;
   }
+
+  &__imgFlags {
+    width: 25px;
+    height: 20px;
+  }
+  &__buttonFlags {
+    border: none;
+    color: initial;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 30px;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &__buttonFlagsCover {
+    //max-width: 1200px;
+    width: 100%;
+    text-align: right;
+  }
   &__menuBox {
-    max-width: 70px;
-    width: 100px;
+    // max-width: 70px;
+    width: 100%;
   }
   &__menuItem {
     max-width: 600px;
@@ -200,6 +223,18 @@ h1 {
     &__nav {
       max-width: 300px;
       margin-left: 15px;
+    }
+    &__imgFlags {
+      width: 18px;
+      max-width: 20px;
+      height: 18px;
+    }
+   
+    &__buttonFlags {
+      width: 20px;
+      height: 20px;
+      top: 9px;
+      left: 50px;
     }
   }
 }

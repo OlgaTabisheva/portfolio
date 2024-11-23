@@ -103,7 +103,8 @@
 
   &__createLine {
     width: 800px;
-    border-top: 3px solid $midleBlue;
+    border-top: 2px solid $midleBlue;
+    opacity: 0.6;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -127,7 +128,7 @@
       min-width: 300px;
     }
     &__createLine {
-      width: 700px;
+      width: 780px;
     }
   }
 }
@@ -143,6 +144,9 @@
   &__listBox2{
     max-width: 600px;
     flex-direction: column-reverse;
+  }
+  &__createLine {
+    width: 490px;
   }
 }
 
@@ -176,7 +180,7 @@
     flex-direction: column-reverse;
   }
   &__createLine {
-    width: 200px;
+    width: 270px;
     margin-left: 21px;
   }
 }

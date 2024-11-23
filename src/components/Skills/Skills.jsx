@@ -23,86 +23,92 @@ function Skills() {
       <ol className={cls.skills__block}>
         <li className={cls.skills__text}>
           <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={css} id="css" alt='css' />
-            CSS/SCSS/Tailwind
-          </div>
-        </li>
-        <li className={cls.skills__text}>
-          <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={html} id="html" alt='html'/>
-            HTML
-          </div>
-        </li>
-        <li className={cls.skills__text}>
-          <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={res} id="res" alt='res'/>
-            Responsive design
-
-          </div>
-        </li>
-        <li className={cls.skills__text}>
-          <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={js} id="js" alt='js'/>
-            Javascript
-          </div>
-        </li>
-        <li className={cls.skills__text}>
-          <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={ts} id="ts" alt='ts'/>
+            <img className={cls.skills__img} src={ts} id="ts" alt="ts" />
             Typescript
           </div>
         </li>
         <li className={cls.skills__text}>
           <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={react} id="react" alt='react'/>
+            <img
+              className={cls.skills__img}
+              src={react}
+              id="react"
+              alt="react"
+            />
             React
           </div>
         </li>
         <li className={cls.skills__text}>
           <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={next} id="next" alt='next'/>
+            <img className={cls.skills__img} src={next} id="next" alt="next" />
             Next.js
           </div>
         </li>
         <li className={cls.skills__text}>
           <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={redux} id="redux" alt='redux'/>
-            Redux/Redux Toolkit
-          </div>
-        </li>
-        <li className={cls.skills__text}>
-          <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={bib} id="bib" alt='bib'/>
-            Library of ready-made UI components: MUI, Bootstrap, etc
-          </div>
-        </li>
-        <li className={cls.skills__text}>
-          <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={hasura} id="hasura" alt='hasura'/>
+            <img
+              className={cls.skills__img}
+              src={hasura}
+              id="hasura"
+              alt="hasura"
+            />
             Hasura/nHost
           </div>
         </li>
         <li className={cls.skills__text}>
           <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={firebase} id="firebase" alt='firebase'/>
+            <img
+              className={cls.skills__img}
+              src={firebase}
+              id="firebase"
+              alt="firebase"
+            />
             Firebase
           </div>
         </li>
         <li className={cls.skills__text}>
           <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={node} id="node" alt='node'/>
+            <img className={cls.skills__img} src={node} id="node" alt="node" />
             Node.js
           </div>
         </li>
         <li className={cls.skills__text}>
           <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={docker} id="docker" alt='docker'/>
+            <img className={cls.skills__img} src={js} id="js" alt="js" />
+            Javascript
+          </div>
+        </li>
+        <li className={cls.skills__text}>
+          <div className={cls.skills__box}>
+            <img
+              className={cls.skills__img}
+              src={redux}
+              id="redux"
+              alt="redux"
+            />
+            Redux/Redux Toolkit
+          </div>
+        </li>
+        <li className={cls.skills__text}>
+          <div className={cls.skills__box}>
+            <img className={cls.skills__img} src={bib} id="bib" alt="bib" />
+            Library of ready-made UI components: MUI, Bootstrap, etc
+          </div>
+        </li>
+        <li className={cls.skills__text}>
+          <div className={cls.skills__box}>
+            <img
+              className={cls.skills__img}
+              src={docker}
+              id="docker"
+              alt="docker"
+            />
             Docker
           </div>
         </li>
         <li className={cls.skills__text}>
           <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={git} id="git" alt='git'/>
+            <img className={cls.skills__img} src={git} id="git" alt="git" />
             Git
           </div>
         </li>
@@ -111,14 +117,39 @@ function Skills() {
          */}{" "}
         <li className={cls.skills__text}>
           <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={figma} id="figma" alt='figma'/>
+            <img
+              className={cls.skills__img}
+              src={figma}
+              id="figma"
+              alt="figma"
+            />
             Figma
           </div>
         </li>
         <li className={cls.skills__text}>
           <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={kanban} id="kanban" alt='kanban'/>
-            Other: <br/>different task tracking systems, Trello, Notion, Bitrix24, ect; <br/>code editors, VS code, Webstorm.
+            <img className={cls.skills__img} src={css} id="css" alt="css" />
+            CSS/SCSS/Tailwind
+          </div>
+        </li>
+        <li className={cls.skills__text}>
+          <div className={cls.skills__box}>
+            <img className={cls.skills__img} src={res} id="res" alt="res" />
+            Responsive design
+          </div>
+        </li>
+        <li className={cls.skills__text}>
+          <div className={cls.skills__box}>
+            <img
+              className={cls.skills__img}
+              src={kanban}
+              id="kanban"
+              alt="kanban"
+            />
+            Other: <br />
+            different task tracking systems, Trello, Notion, Bitrix24, ect;{" "}
+            <br />
+            code editors, VS code, Webstorm.
           </div>
         </li>
         {/*      <li className={cls.skills__text}>

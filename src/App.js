@@ -25,40 +25,40 @@ function App() {
   const { t, i18n } = useTranslation();
   const getUserLanguage =
     window.navigator.userLanguage || window.navigator.language;
-  const [useLanguage, setUseLanguage] = useState(getUserLanguage);
+  const [useLanguage, setUseLanguage] = useState("");
 
   function changeUserLanguage() {
-    if (useLanguage === "en") {
-      setUseLanguage("ru"); 
-       i18n.changeLanguage("ru");
-    }
-    else 
-    if (useLanguage === "ru") {
+    if (useLanguage.toLowerCase().includes("en")) {
+      setUseLanguage("ru");
+      i18n.changeLanguage("ru");
+    } else if (useLanguage.toLowerCase().includes("ru")) {
       setUseLanguage("en");
-        i18n.changeLanguage("en");
+      i18n.changeLanguage("en");
     }
   }
 
   useEffect(() => {
     i18n.changeLanguage(getUserLanguage);
   }, []);
+  useEffect(() => {
+    setUseLanguage(getUserLanguage);
+  }, [getUserLanguage]);
 
   return (
     <div className={style.app}>
-         
       <div id="outer-container" className={style.app__outerContainer}>
-      <div className={style.app__buttonFlagsCover}>
-            <button
-              className={style.app__buttonFlags}
-              onClick={() => changeUserLanguage()}
-            >
-              <img
-                className={style.app__imgFlags}
-                alt="flag"
-                src={useLanguage === "ru" ? flagRu : flagEn}
-              />
-            </button>
-          </div>
+        <div className={style.app__buttonFlagsCover}>
+          <button
+            className={style.app__buttonFlags}
+            onClick={() => changeUserLanguage()}
+          >
+            <img
+              className={style.app__imgFlags}
+              alt="flag"
+              src={useLanguage === "ru" ? flagRu : flagEn}
+            />
+          </button>
+        </div>
         <div className={style.app__menuBox}>
           <Menu
             customBurgerIcon={
@@ -119,7 +119,6 @@ function App() {
               </div>
             </a>
           </Menu>
-     
         </div>
         <nav className={style.app__nav}>
           {/*        <select
@@ -135,43 +134,27 @@ function App() {
             </option>
           </select> */}
 
-          <div className={style.app__menuItemBox}>
-            <a className={style.app__menuItemLink} href="#info" id="info">
-              {t("Hi all")}
-            </a>
+          <div className={style.app__menuItemBox} id="info">
+            <p className={style.app__menuItemLink}>{t("Hi all")}</p>
             <Info />
           </div>
-          <div className={style.app__menuItemBox}>
-            <a
-              className={style.app__menuItemLink}
-              href="#projects"
-              id="projects"
-            >
+          <div className={style.app__menuItemBox} id="projects">
+            <p className={style.app__menuItemLink}>
               {t("project-non-educational")}
-            </a>
+            </p>
             <Projects />
           </div>
-          <div className={style.app__menuItemBox}>
-            <a className={style.app__menuItemLink} href="#skills" id="skills">
-              {t("Skills")}
-            </a>
+          <div className={style.app__menuItemBox} id="skills">
+            <p className={style.app__menuItemLink}>{t("Skills")}</p>
             <Skills />
           </div>
 
-          <div className={style.app__menuItemBox}>
-            <a
-              className={style.app__menuItemLink}
-              href="#education"
-              id="education"
-            >
-              Образование
-            </a>
+          <div className={style.app__menuItemBox} id="education">
+            <p className={style.app__menuItemLink}>Образование</p>
             <Education />
           </div>
-          <div className={style.app__menuItemBox}>
-            <a className={style.app__menuItemLink} href="#contact" id="contact">
-              {t("contacts")}
-            </a>{" "}
+          <div className={style.app__menuItemBox} id="contact">
+            <p className={style.app__menuItemLink}>{t("contacts")}</p>{" "}
             <Contacts />
           </div>
         </nav>

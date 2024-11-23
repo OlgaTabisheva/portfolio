@@ -13,8 +13,6 @@ function Info() {
           <ol className={cls.info__listSmall}>
             <li className={cls.info__text}>{t("paragraph 2")}</li>
             <li className={cls.info__text}>{t("paragraph 2.1")}</li>
-            <li className={cls.info__text}>{t("paragraph 2.2")}</li>
-            <li className={cls.info__text}>{t("paragraph 2.3")}</li>
             <li className={cls.info__text}>{t("paragraph 2.4")}</li>
           </ol>
         </div>

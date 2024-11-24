@@ -74,12 +74,6 @@ function Skills() {
         </li>
         <li className={cls.skills__text}>
           <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={js} id="js" alt="js" />
-            Javascript
-          </div>
-        </li>
-        <li className={cls.skills__text}>
-          <div className={cls.skills__box}>
             <img
               className={cls.skills__img}
               src={redux}
@@ -91,8 +85,37 @@ function Skills() {
         </li>
         <li className={cls.skills__text}>
           <div className={cls.skills__box}>
+            <img className={cls.skills__img} src={js} id="js" alt="js" />
+            Javascript
+          </div>
+        </li>
+        <li className={cls.skills__text}>
+          <div className={cls.skills__box}>
+            <img className={cls.skills__img} src={css} id="css" alt="css" />
+            CSS/SCSS/Tailwind
+          </div>
+        </li>
+        <li className={cls.skills__text}>
+          <div className={cls.skills__box}>
+            <img className={cls.skills__img} src={res} id="res" alt="res" />
+            Responsive design
+          </div>
+        </li>
+        <li className={cls.skills__text}>
+          <div className={cls.skills__box}>
             <img className={cls.skills__img} src={bib} id="bib" alt="bib" />
             Library of ready-made UI components: MUI, Bootstrap, etc
+          </div>
+        </li>
+        <li className={cls.skills__text}>
+          <div className={cls.skills__box}>
+            <img
+              className={cls.skills__img}
+              src={figma}
+              id="figma"
+              alt="figma"
+            />
+            Figma
           </div>
         </li>
         <li className={cls.skills__text}>
@@ -115,29 +138,8 @@ function Skills() {
         {/* <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={axios} id='axios'/>Axios</div></li> */}
         {/*           <li className={cls.skills__text}><div className={cls.skills__box}><img className={cls.skills__img} src={task} id='task'/>{t('task tracker')}</div></li>
          */}{" "}
-        <li className={cls.skills__text}>
-          <div className={cls.skills__box}>
-            <img
-              className={cls.skills__img}
-              src={figma}
-              id="figma"
-              alt="figma"
-            />
-            Figma
-          </div>
-        </li>
-        <li className={cls.skills__text}>
-          <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={css} id="css" alt="css" />
-            CSS/SCSS/Tailwind
-          </div>
-        </li>
-        <li className={cls.skills__text}>
-          <div className={cls.skills__box}>
-            <img className={cls.skills__img} src={res} id="res" alt="res" />
-            Responsive design
-          </div>
-        </li>
+     
+    
         <li className={cls.skills__text}>
           <div className={cls.skills__box}>
             <img

@@ -36,10 +36,10 @@ function App() {
       i18n.changeLanguage("en");
     }
   }
-
   useEffect(() => {
     i18n.changeLanguage(getUserLanguage);
   }, []);
+  
   useEffect(() => {
     setUseLanguage(getUserLanguage);
   }, [getUserLanguage]);
@@ -145,12 +145,12 @@ function App() {
             <Projects />
           </div>
           <div className={style.app__menuItemBox} id="skills">
-            <p className={style.app__menuItemLink}>{t("Skills")}</p>
+            <p className={style.app__menuItemLink}>{t("Skills")}:</p>
             <Skills />
           </div>
 
           <div className={style.app__menuItemBox} id="education">
-            <p className={style.app__menuItemLink}>Образование</p>
+            <p className={style.app__menuItemLink}>{t("MyEducation")}:</p>
             <Education />
           </div>
           <div className={style.app__menuItemBox} id="contact">

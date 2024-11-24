@@ -35,12 +35,10 @@ function Projects() {
               <img className={cls.project__img} src={imgCook} alt="cookBook" />
               <div className={cls.project__textBox}>
                 <p className={cls.project__linkText}>
-                  Cсылка на проект: 'Cook-book'.
+                {t("titleProjects")}: 'Cook-book'.
                 </p>
                 <p className={cls.project__linkTextSmall}>
-                  Готовка станет твоим новым хобби. С нашими пошаговыми
-                  рецептами и полезными советами даже начинающий кулинар сможет
-                  приготовить настоящее произведение искусства.
+                {t("textCookBook")}
                 </p>
               </div>
             </a>
@@ -54,12 +52,10 @@ function Projects() {
               <img className={cls.project__img} src={imgKnot} alt="knotStore" />
               <div className={cls.project__textBox}>
                 <p className={cls.project__linkText}>
-                  Cсылка на проект: 'Knot-store'.
+                {t("titleProjects")}: 'Knot-store'.
                 </p>
                 <p className={cls.project__linkTextSmall}>
-                  Здесь, в этом маленьком магазине, каждая вещь – уникальное
-                  произведение искусства, созданное вручную с любовью и
-                  вниманием к деталям.
+                {t("textKnot")}
                 </p>
               </div>
             </a>

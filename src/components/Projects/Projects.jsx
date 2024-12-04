@@ -30,7 +30,7 @@ function Projects() {
             </div>
             <a
               className={cls.project__linkCover}
-              href="https://cook-book.746746746.xyz/recipes"
+              href="https://cook-book.746746746.xyz/"
             >
               <img className={cls.project__img} src={imgCook} alt="cookBook" />
               <div className={cls.project__textBox}>
